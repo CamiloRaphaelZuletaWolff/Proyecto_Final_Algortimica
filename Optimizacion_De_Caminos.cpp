@@ -114,12 +114,6 @@ void abrirMenu(int posicionInicial, int posicionFinal){
 
 }
 
-void dibujarGrafo(){
-    
-    
-}
-
-
 int main(){
     conexiones();
     std::cout << "----- Bienvenido al sistema de optimizacion de rutas de trabajo ----- " << std::endl;
