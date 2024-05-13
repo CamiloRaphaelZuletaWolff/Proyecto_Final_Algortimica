@@ -121,7 +121,6 @@ void abrirMenu(int posicionInicial, int posicionFinal){
 int main(){
     conexiones();
     std::cout << "----- Bienvenido al sistema de optimizacion de rutas de trabajo ----- " << std::endl;
-    //dibujarGrafo();  Que salga en la consola la ruta que esta cargada
     std::cout << "Introduzca su posicion actual" << std::endl;
     int posicionInicial, posicionFinal;
     cin >> posicionInicial;
