@@ -70,7 +70,6 @@ void abrirMenu(int posicionInicial, int posicionFinal){
         cout << "1. Distancia minima desde tu posicion hasta tu destino"<<endl;
         cout << "2. Ruta ideal hasta tu destino"<<endl;
         cout << "3. Ruta ideal y distancia minima a tu destino"<<endl;
-        std::cout << "4. Dibujar ruta cargada" << std::endl;
         cin >> eleccion;
         switch(eleccion){
             case 1:{
