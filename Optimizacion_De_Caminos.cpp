@@ -71,6 +71,10 @@ void abrirMenu(int posicionInicial, int posicionFinal){
         cout << "2. Ruta ideal hasta tu destino"<<endl;
         cout << "3. Ruta ideal y distancia minima a tu destino"<<endl;
         cin >> eleccion;
+        if(eleccion != 1 ||eleccion != 2 ||eleccion != 3){
+          cout<<"Vuelve a iniciar el programa con un valor valido"<<endl;
+        }
+        
         switch(eleccion){
             case 1:{
             cout<<"La distancia minima hasta tu destino es de: "<< dist[posicionFinal]<<endl;
@@ -104,16 +108,15 @@ void abrirMenu(int posicionInicial, int posicionFinal){
             }
             std::cout << std::endl;
             siguienteMenu(posicionInicial,posicionFinal);
-            break;}
-            
-            
-            
-            
+            break;}   
         }
-        
-        
-    }while(eleccion!=5);
+    }while(eleccion == 1||eleccion == 2||eleccion == 3);
 
+}
+
+void dibujarGrafo(){
+    
+    
 }
 
 
@@ -127,8 +130,6 @@ int main(){
     cin>>posicionFinal;
     dijkstra(posicionInicial);
     abrirMenu(posicionInicial, posicionFinal);
-
-
-
     return 0;
 }
+
